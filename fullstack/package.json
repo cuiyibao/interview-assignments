@@ -1,0 +1,30 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "fullstack",
+  "main": "dist/app.js",
+  "registry": "registry.npmjs.org",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist/app.js && tsc -p tsconfig.json",
+    "start": "node dist/app.js",
+    "test": "mocha test/app.test.js"
+  },
+  "author": "cuiyibao",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/shortid": "^0.0.29",
+    "typescript": "^4.9.5",
+    "mocha": "^10.2.0",
+    "chai": "^4.3.7",
+    "supertest": "^6.3.3"
+  }
+}
